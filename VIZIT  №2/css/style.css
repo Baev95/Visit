@@ -1,0 +1,161 @@
+body{
+    font-size: 16px;
+    margin: 0;
+    background: rgb(68%, 91%, 84%, .2);
+    font-family: 'Inter' 'Quicksand','Times New Roman' sans-serif;
+}
+/* ----ШАПКА-----*/
+.header{
+    height: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, .6);
+    background: linear-gradient( to bottom, rgba(0, 191, 255, .2), rgba(237, 175, 232, .3)) ;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.nav__link{
+    text-decoration: none;
+    margin-right: 10px;
+    color: rgba(44, 48, 54, .8);
+    font-size: 1.1em;
+}
+.nav__link:hover{
+    color: black;
+    transition: .5s;
+    text-decoration: underline;
+}
+.nav__link:active{
+    transform: scale(1.1)
+}    
+/* ---- ЗАГОЛОВОК ---*/
+.camption {
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.camption .camption__h1 {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 25px;
+    align-self: flex-start;
+    width: 100%;
+    color: dimgrey;
+    font-family: 'Alegreya', serif;
+}
+.camption__span{
+    font-size: 20px;
+}
+}
+.camption__photo{
+    background: #000;
+}
+.camption__photo1{
+    margin-top: 20px;
+    border-radius: 30%;
+    border: 3px groove black;
+    box-shadow: 0px 0px 10px green, 0px 0px 5px black;
+    max-width: 30vw;
+    min-width: 20vw
+}
+/* --- ОСНОВА---*/
+.main{
+    margin-left: 19.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50vw;
+}
+.about{
+    position: absolute;
+    top:150px;
+    left: 19.2vw;
+}
+.about__me{
+   max-width: 30vw;
+    min-width: 20vw;
+    height: auto;
+}
+p{
+  max-width: 65%;  
+    text-align: justify;
+    font-family: 'Inter' 'Quicksand','Times New Roman' sans-serif;
+}
+main p::first-letter{
+    color: red;
+    font-size: 22px;
+    font-family: cursive;
+}
+h2 {
+    background-color: #E6E3D013;
+    border-left: 7px double orange;
+    padding-left: 10px;
+    margin-top: 15px;
+    font-family: 'Alegreya', serif;
+}
+ul li{
+list-style-type: none;
+    list-style-image: url(../svg/baseline_done_all_black_18dp.png)
+}
+h2 a{
+    text-decoration: none;
+    color: darkslategray;
+    font-family: 'Alegreya', serif;
+}
+h2 a:hover{
+    color: black;
+    transition: .5s;
+    text-decoration: underline;
+}
+/*---ПОДВАЛ---*/
+footer{
+    margin: auto;
+    text-align: left;
+    width: 60vw;
+}
+.h3 {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  color: rgb(6%, 10%, 9%, 1);;
+  font-weight: bolder;
+}
+.address_div{
+     display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    background: rgba(31%, 80%, 65%, .1);
+    border-radius: 30px;
+}
+.address div{
+    font-size: 20px;
+}
+.address__local:before {
+    content: url(../svg/baseline_home_black_18dp.png)
+}
+.address__tel:before {
+    content: url(../svg/baseline_phone_forwarded_black_18dp.png)
+}
+.address__mail:before {
+    content: url(../svg/baseline_alternate_email_black_18dp.png)
+}
+.address__vk:before {
+    content: url(../svg/vk-social-network-logo.png);
+}
+.address_div a:link{
+    color: rgba(56%, 14%, 13%, .7);
+    text-decoration: none;
+}
+.address_div a:visited{
+    color: rgba(56%, 14%, 13%, .7);
+}
+.address_div a:hover{
+text-decoration: underline;
+    color: rgba(13%, 14%, 13%, 1);
+}
